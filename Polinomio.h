@@ -37,20 +37,4 @@ private:
     float c;
     float d;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif
