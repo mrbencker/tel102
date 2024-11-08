@@ -6,14 +6,16 @@
 #include <symengine/add.h>
 #include <symengine/mul.h>
 #include <iostream>
+#include <vector>
 
 using namespace SymEngine;
 class Polinomio{
 protected:
-    RCP<const Symbol> variable; // Puntero de clase symbol que almacena la variable simbolica en este caso "x"
-    RCP<const Basic> polinomio; // Puntero de clase Basic que es una plantilla para cualquier tipo de expresion matematica basica
+    RCP<const Symbol> variable; // Puntero de clase symbol que almacena la variable simbolica en este caso "x".
+    RCP<const Basic> polinomio; // Puntero de clase Basic que es una plantilla para cualquier tipo de expresion matematica basica.
+    std::vector<float> coeficientes; // Vector para almacenar los coeficientes.
 public:
-    Polinomio(std::string variable); //Constructor que va a recibir el puntero variable
+    Polinomio(std::string variable, int grado); //Constructor que va a recibir el puntero variable
     virtual RCP<const Basic> derivar();
     virtual double evaluar(double valor);      
     virtual void Polinomioescrito() = 0;
