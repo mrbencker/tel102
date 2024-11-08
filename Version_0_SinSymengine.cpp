@@ -1,3 +1,5 @@
+// Posible forma de implementar las clases polinomios con vectors.
+
 #include <iostream>
 #include <vector>
 using namespace std;
