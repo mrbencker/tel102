@@ -19,7 +19,7 @@ vector<string> split(string str, char pattern) {
       results.push_back(str.substr(posInit)); 
   }
   return results;
-}
+}//José Flores
 
 int main(){
   string alo;
